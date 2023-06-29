@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "deploy": "node scripts/deployment.js",
-    "build": "vite build"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
     "execa": "^7.1.1",
