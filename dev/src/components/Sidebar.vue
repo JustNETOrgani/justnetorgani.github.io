@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import logoURL from '../assets/logo.svg'
+import logoURL from '../assets/swust.jpg'
 
 const is_expanded = ref(localStorage.getItem("is_expanded") === "true")
 
@@ -27,6 +27,10 @@ const ToggleMenu = () => {
 			<router-link to="/" class="button">
 				<span class="material-icons">home</span>
 				<span class="text">Home</span>
+			</router-link>
+            <router-link to="/education" class="button">
+				<span class="material-icons">school</span>
+				<span class="text">Education and Skills</span>
 			</router-link>
 			<router-link to="/research" class="button">
 				<span class="material-icons">science</span>

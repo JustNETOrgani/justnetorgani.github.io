@@ -1,4 +1,5 @@
 <script setup>
+import HobLang from '../components/HobLang.vue'
 </script>
 
 <template>
@@ -9,13 +10,29 @@
     <h2>Justice Odoom (PhD, MSE, BSc, BEd, Dip)</h2>
     <br>
     <div class="myBio">
-      <v-icon name="fa-user-circle" />Biography
+      <v-icon name="fa-user-circle" /><h3>Biography</h3>
       <p>I received my BSc and MSE degrees in Computer Science from Data Link University, Tema, Ghana and Southwest University of Science and Technology, Mianyang-Sichuan, China, in 2015 and 2020 respectively. I obtained my PhD in 2023 from Southwest University of Science and Technology, China. 
           I am a certified Elsevier and Publons academy peer reviewer. My research interests include information security, blockchain technology, ring signatures and privacy-preservation in the sharing of Electronic Health Records (EHRs). 
           I am a member of IEEE and IEEE Computer Society. 
       </p>
     </div>
-    
+    <div class="bottomMain">
+      <v-icon name="co-happy" /><h3>HOBBIES</h3>
+      <el-icon class="icon"><Reading /></el-icon>Reading tech journals
+      <br>
+      <v-icon class="icon" name="gi-grand-piano" />Playing the organ
+      <br>
+      <el-icon class="icon"><Film /></el-icon>Watching movies
+    </div>
+    <div class="bottomMain">
+      <h3>HOBBIES</h3>
+      <v-icon name="co-language" /><h3>LANGUAGES</h3>
+        <el-tag>English</el-tag>
+        <el-tag class="ml-2" type="info">Chinese</el-tag>
+        <br>
+        <el-tag class="ml-2" type="warning">French</el-tag>
+        <el-tag>Twi (GH lang.)</el-tag>
+    </div>
   </main>
 </template>
 
@@ -38,7 +55,19 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: var(--color-heading);
+}
+
 .myBio{
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.bottomMain {
+  width: 40%;
 }
 </style>

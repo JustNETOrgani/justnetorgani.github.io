@@ -1,10 +1,10 @@
 <script setup>
+import MyContact from '../components/MyContact.vue'
 </script>
 
 <template>
     <main class="contact-page">
-        <h1>Contact</h1>
-      <p>This is the contact page</p>
+        <MyContact />
     </main>
 </template>
   
