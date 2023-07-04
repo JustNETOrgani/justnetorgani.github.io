@@ -3,12 +3,12 @@ const tableData = [
   {
     degree: 'Doctor of Philosophy (PhD)',
     year: '2023',
-    institution: 'Southwest University of Science and Technology, Mianyang, Sichuabn-China',
+    institution: 'Southwest University of Science and Technology, Mianyang, Sichuan-China',
   },
   {
     degree: 'Master of Science in Engineering (MSE)',
     year: '2020',
-    institution: 'Southwest University of Science and Technology, Mianyang, Sichuabn-China',
+    institution: 'Southwest University of Science and Technology, Mianyang, Sichuan-China',
   },
   {
     degree: 'Bachelor of Science (BSc)',
