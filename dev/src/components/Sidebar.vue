@@ -48,6 +48,10 @@ const ToggleMenu = () => {
 				<span class="material-icons">contact_page</span>
 				<span class="text">Contact</span>
 			</router-link>
+            <router-link to="/newsfeed" class="button">
+				<span class="material-icons">feed</span>
+				<span class="text">News flash</span>
+			</router-link>
 		</div>
 
 		<div class="flex"></div>
