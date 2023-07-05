@@ -49,7 +49,7 @@ const tableData = [
             </el-table>
         </div>
         <el-row>
-            <el-col :span="4"><div class="grid-content ep-bg-purple" /><img alt="SwustImg" class="logoSchool" src="@/assets/swust.jpg" /></el-col>
+            <el-col :span="4"><div class="grid-content ep-bg-purple" /><img alt="SwustImg" class="logoSchool" src="@/assets/swust.png" /></el-col>
             <el-col :span="4"><div class="grid-content ep-bg-purple-light" /><img alt="DatalinkImg" class="logoSchool" src="@/assets/datalink.png" /></el-col>
             <el-col :span="4"><div class="grid-content ep-bg-purple" /><img alt="AITIKACEImg" class="logoSchool" src="@/assets/gikace.png" /></el-col>
             <el-col :span="4"><div class="grid-content ep-bg-purple-light" /><img alt="UEWImg" class="logoSchool" src="@/assets/uew.png" /></el-col>

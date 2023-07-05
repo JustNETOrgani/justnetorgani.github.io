@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import logoURL from '../assets/swust.jpg'
+import logoURL from '../assets/swust.png'
 
 const is_expanded = ref(localStorage.getItem("is_expanded") === "true")
 
