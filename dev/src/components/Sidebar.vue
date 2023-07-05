@@ -42,7 +42,7 @@ const ToggleMenu = () => {
 			</router-link>
             <router-link to="/service" class="button">
 				<span class="material-icons">work</span>
-				<span class="text">Service</span>
+				<span class="text">Work & Service</span>
 			</router-link>
 			<router-link to="/contact" class="button">
 				<span class="material-icons">contact_page</span>
