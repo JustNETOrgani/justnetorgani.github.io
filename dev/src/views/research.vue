@@ -1,4 +1,22 @@
-<script setup>
+<script lang="ts" setup>
+import { ElMessage, ElMessageBox } from 'element-plus'
+import type { Action } from 'element-plus'
+
+import { onMounted } from 'vue'
+
+onMounted(() => {
+    ElMessageBox.alert('Not all publications are open access', 'Heads-up', {
+    // if you want to disable its autofocus
+    // autofocus: false,
+    confirmButtonText: 'OK',
+    callback: (action: Action) => {
+      ElMessage({
+        type: 'info',
+        message: `action: ${action}`,
+      })
+    },
+  })
+})
 </script>
 
 <template>
