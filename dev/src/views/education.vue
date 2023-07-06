@@ -28,7 +28,7 @@ const tableData = [
   {
     degree: 'Diploma (Dip)',
     year: '2007',
-    institution: 'Abetifi Presbyterian Teachers College',
+    institution: 'Abetifi Presbyterian College of Education',
   },
   {
     degree: 'SSSCE',
