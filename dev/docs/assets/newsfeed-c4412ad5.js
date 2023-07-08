@@ -1,4 +1,4 @@
-import{_ as o,l as n,m as c,o as l,c as d,n as _,a as s,p as i,d as r}from"./index-33c332f6.js";const p=e=>(i("data-v-980ebb38"),e=e(),r(),e),g={class:"service-page"},v=p(()=>s("h2",null,"News flash",-1)),u=`
+import{_ as o,l as n,m as c,o as l,c as d,n as _,a as s,p as i,d as r}from"./index-410cd567.js";const p=e=>(i("data-v-980ebb38"),e=e(),r(),e),g={class:"service-page"},v=p(()=>s("h2",null,"News flash",-1)),u=`
         <path class="path" d="
           M 30 15
           L 28 17
