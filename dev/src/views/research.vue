@@ -55,7 +55,7 @@ onMounted(() => {
                 <li>  
                     An Optimal Defect Recognition Security-Based Terahertz Low Resolution Image System Using Deep Learning
                     <br>
-                    , Egyptian Informatics Journal, Elsevier, DOI: 10.1016/j.eij.2023.05.009
+                    Egyptian Informatics Journal, Elsevier, DOI: 10.1016/j.eij.2023.05.009
                     <br> 
                     <a href="https://www.sciencedirect.com/science/article/pii/S1110866523000324" target="_blank" rel="noopener">Paper</a>  
                 </li>
