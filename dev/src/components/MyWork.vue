@@ -15,7 +15,7 @@ import ContactItem from './ContactItem.vue'
     <template #icon>
         <img alt="5GECImg" class="logoSchool" src="@/assets/5gec.png" />
     </template>
-    <template #heading>Ghana Armed Forces Education Unit GHQ (5 Garrison Education), Burma Camp-Accra</template>
+    <template #heading>Ghana Armed Forces Education Unit HQ (5 Garrison Education), Burma Camp-Accra</template>
     <h4>Position: ICT facilitator</h4>
   </ContactItem>
 
@@ -23,7 +23,7 @@ import ContactItem from './ContactItem.vue'
     <template #icon>
         <img alt="GESImg" class="logoSchool" src="@/assets/ges.png" />
     </template>
-    <template #heading>Presbyterian Education Unit</template>
+    <template #heading>Ghana Education Service (Kwahu West Municipality)</template>
     <h4>Position: ICT/Mathematics/Science facilitator</h4>
   </ContactItem>
 
