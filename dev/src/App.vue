@@ -1,11 +1,26 @@
 <script setup>
 import Sidebar from './components/Sidebar.vue'
+import { useDark, useToggle  } from "@vueuse/core";
+const isDark = useDark();
+const toggleDark = useToggle(isDark);
+
+import { ref } from 'vue'
+
+const themeSwitch = ref(true)
 </script>
 
 <template>
 	<div class="app">
 		<!-- Sidebar -->
 		<Sidebar />
+		<div class="userSwitchDiv" >
+			<el-switch 
+				v-model="themeSwitch" 
+				active-text="Light" 
+				inactive-text="Dark" 
+				@change="toggleDark()" 
+			/>
+		</div>
 		<!-- Content -->
 		<router-view />
 	</div>
@@ -63,10 +78,6 @@ import Sidebar from './components/Sidebar.vue'
 	font-family: 'Fira sans', sans-serif;
 }
 
-body {
-	background: var(--light);
-}
-
 button {
 	cursor: pointer;
 	appearance: none;
@@ -86,5 +97,15 @@ button {
 			padding-left: 6rem;
 		}
 	}
+}
+
+.dark {
+  background: #4a505a; // Better to use a dark grey color instead of pure black
+  color: #fff;
+}
+
+.userSwitchDiv{
+	position: absolute;;
+	right: 1rem;
 }
 </style>

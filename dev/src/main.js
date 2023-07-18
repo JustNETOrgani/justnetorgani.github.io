@@ -4,12 +4,12 @@ import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 import * as ElementPlusIconsVue from '@element-plus/icons-vue'
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { FaUserCircle, BiGlobe, BiFacebook, BiInstagram, BiTwitter, BiLinkedin, CoLanguage, CoHappy, FaBirthdayCake, MdSocialdistanceRound, GiGrandPiano } from "oh-vue-icons/icons";
+import { GiArchiveResearch, AiGoogleScholarSquare, AiResearchgateSquare, FaUserCircle, BiGlobe, BiFacebook, BiInstagram, BiTwitter, BiLinkedin, CoLanguage, CoHappy, FaBirthdayCake, MdSocialdistanceRound, GiGrandPiano } from "oh-vue-icons/icons";
 
 import App from './App.vue'
 import router from './router'
 
-addIcons(FaUserCircle, BiGlobe, BiFacebook, BiInstagram, BiTwitter, BiLinkedin, CoLanguage, CoHappy, FaBirthdayCake, MdSocialdistanceRound, GiGrandPiano);
+addIcons(GiArchiveResearch, AiGoogleScholarSquare, AiResearchgateSquare, FaUserCircle, BiGlobe, BiFacebook, BiInstagram, BiTwitter, BiLinkedin, CoLanguage, CoHappy, FaBirthdayCake, MdSocialdistanceRound, GiGrandPiano);
 
 const app = createApp(App)
 
