@@ -15,7 +15,7 @@ import ContactItem from './ContactItem.vue'
     <template #icon>
         <img alt="5GECImg" class="logoSchool" src="@/assets/5gec.png" />
     </template>
-    <template #heading>Ghana Armed Forces Education Unit HQ (5 Garrison Education), Burma Camp-Accra</template>
+    <template #heading>Ghana Armed Forces Education Unit HQ (5 Garrison), Burma Camp-Accra</template>
     <h4>Position: ICT facilitator</h4>
   </ContactItem>
 
