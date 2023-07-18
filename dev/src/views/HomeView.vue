@@ -62,15 +62,15 @@ const customColorMethod = (percentage: number) => {
           <el-progress type="circle" :percentage="95" :width="88" :color="customColorMethod">
             <span class="percentage-label">English</span>
           </el-progress>
-          <el-progress type="circle" :percentage="65" :width="88" :color="customColorMethod">
+          <el-progress type="circle" :percentage="60" :width="88" :color="customColorMethod">
               <span class="percentage-label">Chinese</span>
           </el-progress>
           <el-progress type="circle" :percentage="40" :width="88" :color="customColorMethod">
               <span class="percentage-label">French</span>
           </el-progress>
-          <el-progress type="circle" :percentage="100" :width="88" :color="customColorMethod">
+          <!-- <el-progress type="circle" :percentage="100" :width="88" :color="customColorMethod">
               <span class="percentage-label">Twi (GH lang.)</span>
-          </el-progress>
+          </el-progress> -->
         </div>
       </el-col>
     </el-row>
