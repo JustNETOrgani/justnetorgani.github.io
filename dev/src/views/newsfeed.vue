@@ -18,13 +18,18 @@ const svg = `
 <template>
     <main class="service-page">
         <h2>News flash</h2>
-        <div v-loading="loading"
+        <!-- <div v-loading="loading"
           element-loading-text="Loading..."
           :element-loading-spinner="svg"
           element-loading-svg-view-box="-10, -10, 50, 50"
           element-loading-background="rgba(122, 122, 122, 0.8)">
-
+        </div> -->
+        <div>
+          <p>New article accepted for publication</p><br>
+          <p>Title: Blockchain-assisted Sharing of Electronic Health Records: A Feasible Privacy-centric Constant-size Ring Signature Framework</p> <br>
+          <p>Journal: International Journal of Computers and Applications</p>
         </div>
+        
     </main>
 </template>
 
