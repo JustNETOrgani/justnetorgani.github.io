@@ -5,17 +5,17 @@ import ContactItem from './ContactItem.vue'
 <template>
     <ContactItem>
     <template #icon>
-        
+      <img alt="CurrentWorkImg" class="logoSchool" src="@/assets/swust.png" />
     </template>
-    <template #heading>University name loading...</template>
-    <h4>Position: Lecturer</h4>
+    <template #heading>Southwest University of Science and Technology, Mianyang Sichuan-P.R.China</template>
+    <h4>Position: Lecturer (Associate Professor)</h4>
   </ContactItem>
 
   <ContactItem>
     <template #icon>
         <img alt="5GECImg" class="logoSchool" src="@/assets/5gec.png" />
     </template>
-    <template #heading>Ghana Armed Forces Education Unit HQ (5 Garrison), Burma Camp-Accra</template>
+    <template #heading>Ghana Armed Forces Education Unit HQ (5 Garrison), Burma Camp, Accra-Ghana</template>
     <h4>Position: ICT facilitator</h4>
   </ContactItem>
 
