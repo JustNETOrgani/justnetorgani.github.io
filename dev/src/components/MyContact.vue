@@ -9,7 +9,7 @@ import ContactItem from './ContactItem.vue'
     </template>
     <template #heading>INFO</template>
 
-    <el-icon  class="icon"><Message /></el-icon>justnetonline@outlook.com
+    <el-icon  class="icon"><Message /></el-icon>3275740753@qq.com  
     <br>
     <v-icon  class="icon" name="bi-globe" animation="pulse"/>
     <a href="https://justnetorgani.github.io/" target="_blank" rel="noopener">https://justnetorgani.github.io/</a>
