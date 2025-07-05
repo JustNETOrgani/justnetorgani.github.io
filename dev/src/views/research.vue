@@ -1,20 +1,13 @@
-<script lang="ts" setup>
-import { ElMessage, ElMessageBox } from 'element-plus'
-import type { Action } from 'element-plus'
+<script setup>
+import { ElMessage } from 'element-plus'
+// import { Action } from 'element-plus'
 
 import { onMounted } from 'vue'
 
 onMounted(() => {
-    ElMessageBox.alert('Not all publications are open access', 'Heads-up', {
-    // if you want to disable its autofocus
-    // autofocus: false,
-    confirmButtonText: 'OK',
-    callback: (action: Action) => {
-      ElMessage({
-        type: 'info',
-        message: `action: ${action}`,
-      })
-    },
+   ElMessage({
+    showClose: true,
+    message: 'Not all publications are open access.',
   })
 })
 </script>
@@ -22,8 +15,51 @@ onMounted(() => {
 <template>
     <main class="research-page">
         <h2>List of Publications</h2>
-        <h3>2023</h3>
+        <h3>2025</h3>
             <ul>  
+                <li>  
+                    FastFunds: A Machine Learning-driven Personal Loan Approval Prediction Mobile App
+                    <br>
+                    International Conference on Business and Economic Development (ICBED), New York, USA, DOI: 10.24052/BMR/V16NU01/ART-006
+                    <br> 
+                    <a href="https://doi.org/10.24052/BMR/V16NU01/ART-006" target="_blank" rel="noopener">Paper</a>  
+                </li>
+                <li>  
+                    EDV-ML: Enhanced Distance Vector Hop Localization for Wireless Sensor Network using Machine Learning
+                    <br>
+                    International Congress on Information and Communication Technology (ICICT 2025), London, United Kingdom, DOI: Pending...
+                    <br> 
+                    <a href="" target="_blank" rel="noopener">Paper</a>  
+                </li>
+                <li>  
+                    LODEC: LODCO Edge Computing for TDOA Localization
+                    <br>
+                    International Congress on Information and Communication Technology (ICICT 2025), London, United Kingdom, DOI: Pending...
+                    <br> 
+                    <a href="" target="_blank" rel="noopener">Paper</a>  
+                </li>
+            </ul> 
+        <br> 
+        <h3>2024</h3>
+            <ul>  
+                <li>  
+                    Identity-based Linkable Ring Signcryption on NTRU Lattice
+                    <br>
+                    计算机科学 (Computer Science).
+                    <br> 
+                    <a href="https://link.cnki.net/urlid/50.1075.tp.20241028.1208.025" target="_blank" rel="noopener">Paper</a>  
+                </li>
+            </ul> 
+        <br>    
+        <h3>2023</h3>
+            <ul> 
+                <li>  
+                    Blockchain-assisted Sharing of Electronic Health Records: A Feasible Privacy-centric Constant-size Ring Signature Framework
+                    <br>
+                    International Journal of Computers and Applications, DOI: 10.1080/1206212X.2023.2252238
+                    <br> 
+                    <a href="https://doi.org/10.1080/1206212X.2023.2252238" target="_blank" rel="noopener">Paper</a>  
+                </li> 
                 <li>  
                     Privacy preservation for Transaction Initiators: A Stronger Key Image Ring Signature and Smart Contract-based Framework
                     <br>
