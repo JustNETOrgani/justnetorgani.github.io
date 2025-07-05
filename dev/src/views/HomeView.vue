@@ -186,7 +186,7 @@ const customColorMethod = (percentage: number) => {
           :percentage="70"
           :color="customColorMethod"
         >
-          <span>C++</span>
+          <span>C & C++</span>
         </el-progress>
       </el-col>
       <el-col :span="6"><div class="grid-content ep-bg-purple" />
