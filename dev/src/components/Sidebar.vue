@@ -24,6 +24,7 @@ const ToggleMenu = () => {
 
 		<h3>Menu</h3>
 		<div class="menu">
+			<!--All icons available at => https://fontawesomeicons.com/materialdesign/icons -->
 			<router-link to="/" class="button">
 				<span class="material-icons">home</span>
 				<span class="text">Home</span>
@@ -51,6 +52,10 @@ const ToggleMenu = () => {
             <router-link to="/newsfeed" class="button">
 				<span class="material-icons">feed</span>
 				<span class="text">News flash</span>
+			</router-link>
+			<router-link to="/courses" class="button">
+				<span class="material-icons">local_library</span>
+				<span class="text">Courses</span>
 			</router-link>
 		</div>
 

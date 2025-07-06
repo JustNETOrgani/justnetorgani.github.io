@@ -46,6 +46,11 @@ const router = createRouter({
       path: '/newsfeed',
       name: 'newsfeed',
       component: () => import('../views/newsfeed.vue')
+    },
+    {
+      path: '/courses',
+      name: 'courses',
+      component: () => import('../views/courses.vue')
     }
   ]
 })
