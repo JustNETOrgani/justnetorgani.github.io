@@ -44,7 +44,11 @@ import MyWork from '../components/MyWork.vue'
                 <li>Institute of Electrical and Electronics Engineers (IEEE)</li>
                 <li>IEEE Computer Society</li>
                 <li>IEEE Blockchain Community</li>
-            </ul>   
+            </ul>
+        <h2>Visiting Professorship</h2>  
+         <ul>
+            <li>Ghana Communication Technology University (GCTU), Accra-Ghana</li>
+        </ul> 
     </main>
 </template>
 
