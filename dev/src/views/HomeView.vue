@@ -39,8 +39,8 @@ const customColorMethod = (percentage: number) => {
       <span class="material-icons">person</span>
 			<span class="text">Biography</span>
       <p>I received my BSc and MSE degrees in Computer Science from Data Link University, Tema, Ghana and Southwest University of Science and Technology, Mianyang-Sichuan, China, in 2015 and 2020 respectively. I obtained my PhD in 2023 from Southwest University of Science and Technology, China. 
-          I am a certified Elsevier and Publons academy peer reviewer. My research interests include information security, blockchain technology, ring signatures and privacy-preservation in the sharing of Electronic Health Records (EHRs). 
-          I am a member of IEEE and IEEE Computer Society. 
+          I am a certified Elsevier and Publons academy peer reviewer. My research interests include information security, blockchain technology, ring signatures, privacy-preservation in the sharing of Electronic Health Records (EHRs) and federated learning (FL). 
+          I am a member of IEEE, IEEE Computer Society and IEEE Blockchain Community. 
       </p>
     </div>
     <el-row>
@@ -128,10 +128,10 @@ const customColorMethod = (percentage: number) => {
         <el-progress
           :text-inside="true"
           :stroke-width="20"
-          :percentage="70"
+          :percentage="75"
           :color="customColorMethod"
         >
-          <span>React.js</span>
+          <span>React.js & React Native</span>
         </el-progress>
       </el-col>
       <el-col :span="6"><div class="grid-content ep-bg-purple" />
@@ -171,7 +171,7 @@ const customColorMethod = (percentage: number) => {
         <el-progress
           :text-inside="true"
           :stroke-width="20"
-          :percentage="70"
+          :percentage="75"
           :color="customColorMethod"
         >
           <span>Java</span>
@@ -183,7 +183,7 @@ const customColorMethod = (percentage: number) => {
         <el-progress
           :text-inside="true"
           :stroke-width="20"
-          :percentage="70"
+          :percentage="80"
           :color="customColorMethod"
         >
           <span>C & C++</span>
@@ -234,6 +234,7 @@ h3 {
   margin-top: 1rem;
   margin-bottom: 0.5rem;
 }
+p{line-height: 2;}
 
 .icon {
     margin-top: 1rem;
