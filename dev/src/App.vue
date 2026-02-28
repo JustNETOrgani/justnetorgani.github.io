@@ -2,23 +2,40 @@
 import Sidebar from './components/Sidebar.vue'
 import { useDark, useToggle  } from "@vueuse/core";
 const isDark = useDark();
-const toggleDark = useToggle(isDark);
+const toggleDark = useToggle(isDark); // still available if needed elsewhere
 
-import { ref } from 'vue'
+import { ref, watchEffect } from 'vue'
+const sidebar = ref(null)
 
-const themeSwitch = ref(true)
+// sync dark class on <html> for global styles (e.g. background)
+watchEffect(() => {
+  document.documentElement.classList.toggle('dark', isDark.value)
+})
+
+// debug: log whenever dark mode value changes
+watchEffect(() => {
+  console.log('isDark value changed:', isDark.value)
+})
+
+// helper to call sidebar toggle (exposed via defineExpose)
+function toggleSidebar() {
+  if (sidebar.value && sidebar.value.ToggleMenu) {
+    sidebar.value.ToggleMenu()
+  }
+}
 </script>
 
 <template>
-	<div class="app">
+	<div class="app" :class="{ dark: isDark }">
+		<!-- mobile hamburger, visible on small screens -->
+		<button class="mobile-hamburger" @click="toggleSidebar">☰</button>
 		<!-- Sidebar -->
-		<Sidebar />
+		<Sidebar ref="sidebar" />
 		<div class="userSwitchDiv" >
 			<el-switch 
-				v-model="themeSwitch" 
+				v-model="isDark" 
 				active-text="Light" 
 				inactive-text="Dark" 
-				@change="toggleDark()" 
 			/>
 		</div>
 		<!-- Content -->
@@ -71,11 +88,12 @@ const themeSwitch = ref(true)
   --section-gap: 160px;
 }
 
+/* move shared reset/typography to global.css */
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Fira sans', sans-serif;
 }
 
 button {
@@ -99,13 +117,27 @@ button {
 	}
 }
 
-.dark {
-  background: #4a505a; // Better to use a dark grey color instead of pure black
-  color: #fff;
-}
-
 .userSwitchDiv{
 	position: absolute;;
 	right: 1rem;
+}
+
+/* hamburger toggle for sidebar on mobile */
+.mobile-hamburger {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 1100;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text, #333);
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-hamburger {
+    display: block;
+  }
 }
 </style>

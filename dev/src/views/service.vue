@@ -3,7 +3,7 @@ import MyWork from '../components/MyWork.vue'
 </script>
 
 <template>
-    <main class="service-page">
+    <main class="page service-page">
         <h2>Work</h2>
             <MyWork />
         <h2>Service</h2>

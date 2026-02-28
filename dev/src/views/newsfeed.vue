@@ -16,7 +16,7 @@ const svg = `
 </script>
 
 <template>
-    <main class="service-page">
+    <main class="page newsfeed-page">
         <h2>News flash</h2>
         <div v-loading="loading"
           element-loading-text="Loading..."

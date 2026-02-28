@@ -5,7 +5,7 @@ const undergradCourses = ref('1')
 </script>
 
 <template>
-    <main class="courses-page">
+    <main class="page courses-page">
         <h2>Courses Lectured</h2>
         <div class="eduDiv">
             <h4>Graduate (Master-level)</h4>

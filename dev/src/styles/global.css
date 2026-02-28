@@ -1,0 +1,65 @@
+:root {
+  --color-primary: #409eff;
+  --color-secondary: #6f7ad3;
+  --color-bg: #ffffff;
+  --font-sans: 'Helvetica Neue', Arial, sans-serif;
+  --section-gap: 2rem;
+  --color-text: #333333;
+}
+
+/* dark theme tweaks: pick warmer greys and smaller contrast between
+   body and page background so center panel isn't jet black */
+html.dark {
+  --color-bg: #1e1e1e;        /* overall page background */
+  --color-bg-alt: #252525;    /* inner container background (lightened a bit) */
+  --color-text: #e0e0e0;
+}
+
+html.dark .page {
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+}
+
+/* home page should match the same colour as other pages in dark mode */
+html.dark .home-page {
+  background: var(--color-bg-alt);
+  color: var(--color-text);
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  color: var(--color-text);
+  background: var(--color-bg);
+  margin: 0;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: var(--section-gap);
+}
+
+/* simple fade transition used in App.vue */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* utility spacing */
+.mt-1 {
+  margin-top: 1rem;
+}
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .page {
+    padding: 1rem;
+  }
+}

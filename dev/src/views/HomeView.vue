@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
+import TechProgress from '@/components/TechProgress.vue'
 
 const percentage = ref(20)
 const customColor = ref('#409eff')
@@ -81,47 +82,10 @@ const customColorMethod = (percentage: number) => {
       <div class="holder"><p class="tecStackText">Databases</p></div>
     </el-row>
     <el-row class="smallGap">
-      <el-col :span="6"><div class="grid-content ep-bg-purple" />
-        <el-progress
-          :text-inside="true"
-          :stroke-width="20"
-          :percentage="90"
-          status="success"
-        >
-          <span>Vue.js</span>
-        </el-progress>
-      </el-col>
-      <el-col :span="6"><div class="grid-content ep-bg-purple" />
-        <el-progress
-          :text-inside="true"
-          :stroke-width="20"
-          :percentage="90"
-          status="success"
-        >
-          <span>Python/Django</span>
-        </el-progress>
-      </el-col>
-
-      <el-col :span="6"><div class="grid-content ep-bg-purple" />
-        <el-progress
-          :text-inside="true"
-          :stroke-width="20"
-          :percentage="90"
-          status="success"
-        >
-          <span>MySQL</span>
-        </el-progress>
-      </el-col>
-      <el-col :span="6"><div class="grid-content ep-bg-purple" />
-        <el-progress
-          :text-inside="true"
-          :stroke-width="20"
-          :percentage="90"
-          status="success"
-        >
-          <span>MongoDB</span>
-        </el-progress>
-      </el-col>
+      <TechProgress label="Vue.js" :percentage="90" :color="customColorMethod" />
+      <TechProgress label="Python/Django" :percentage="90" :color="customColorMethod" />
+      <TechProgress label="MySQL" :percentage="90" :color="customColorMethod" />
+      <TechProgress label="MongoDB" :percentage="90" :color="customColorMethod" />
     </el-row>
     <el-row class="smallGap">
       <el-col :span="6"><div class="grid-content ep-bg-purple" />

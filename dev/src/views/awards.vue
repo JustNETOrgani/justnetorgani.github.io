@@ -19,7 +19,7 @@ const tableData = [
 </script>
 
 <template>
-    <main class="awards-page">
+    <main class="page awards-page">
         <h2>Awards received</h2>
         <div class="eduDiv">
             <el-table :data="tableData" stripe style="width: 80%">

@@ -1,5 +1,6 @@
 <script setup>
 import { ElMessage } from 'element-plus'
+import SectionHeader from '@/components/SectionHeader.vue'
 // import { Action } from 'element-plus'
 
 import { onMounted } from 'vue'
@@ -13,8 +14,19 @@ onMounted(() => {
 </script>
 
 <template>
-    <main class="research-page">
-        <h2>List of Publications</h2>
+    <main class="page research-page">
+        <SectionHeader title="List of Publications" />
+        <h3>2026</h3>
+            <ul>  
+                <li>  
+                    Calibrated Stacked Ensemble Learning for Heart Disease Risk Prediction Using Clinical Features
+                    <br>
+                    International Conference on ICT for Intelligent Systems (ICTIS 2026)-New York, USA
+                    <br> 
+                    <a href="" target="_blank" rel="noopener">Paper Accepted</a>  
+                </li>
+            </ul>
+        <br> 
         <h3>2025</h3>
             <ul>  
                 <li>  
@@ -27,16 +39,16 @@ onMounted(() => {
                 <li>  
                     EDV-ML: Enhanced Distance Vector Hop Localization for Wireless Sensor Network using Machine Learning
                     <br>
-                    International Congress on Information and Communication Technology (ICICT 2025), London, United Kingdom, DOI: Pending...
+                    International Congress on Information and Communication Technology (ICICT 2025), London, United Kingdom, DOI: 10.1007/978-981-96-6435-1_38
                     <br> 
-                    <a href="" target="_blank" rel="noopener">Paper</a>  
+                    <a href="https://doi.org/10.1007/978-981-96-6435-1_38" target="_blank" rel="noopener">Paper</a>  
                 </li>
                 <li>  
                     LODEC: LODCO Edge Computing for TDOA Localization
                     <br>
-                    International Congress on Information and Communication Technology (ICICT 2025), London, United Kingdom, DOI: Pending...
+                    International Congress on Information and Communication Technology (ICICT 2025), London, United Kingdom, DOI: 10.1007/978-981-96-6429-0_43
                     <br> 
-                    <a href="" target="_blank" rel="noopener">Paper</a>  
+                    <a href="https://doi.org/10.1007/978-981-96-6429-0_43" target="_blank" rel="noopener">Paper</a>  
                 </li>
             </ul> 
         <br> 

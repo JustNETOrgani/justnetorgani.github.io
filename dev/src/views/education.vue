@@ -39,7 +39,7 @@ const tableData = [
 </script>
 
 <template>
-    <main class="education-page">
+    <main class="page education-page">
         <h2>The educational journey</h2>
         <div class="eduDiv">
             <el-table :data="tableData" stripe style="width: 100%">
