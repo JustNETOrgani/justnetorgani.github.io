@@ -39,8 +39,8 @@ const customColorMethod = (percentage: number) => {
     <div class="myBio">
       <span class="material-icons">person</span>
 			<span class="text">Biography</span>
-      <p>I received my BSc and MSE degrees in Computer Science from Data Link University, Tema, Ghana and Southwest University of Science and Technology, Mianyang-Sichuan, China, in 2015 and 2020 respectively. I obtained my PhD in 2023 from Southwest University of Science and Technology, China. 
-          I am a certified Elsevier and Publons academy peer reviewer. My research interests include information security, blockchain technology, ring signatures, privacy-preservation in the sharing of Electronic Health Records (EHRs) and federated learning (FL). 
+      <p>I received my BSc and MSE degrees in Computer Science from Data Link University, Tema, Ghana and Southwest University of Science and Technology (SWUST), Mianyang-Sichuan, China, in 2015 and 2020 respectively. I obtained my PhD in 2023 from Southwest University of Science and Technology, China. 
+          I am currently an Associate Professor at the School of Computer Science and Technology of SWUST and a certified Elsevier and Publons academy peer reviewer. My research interests include Information Security, Blockchain technology, Cryptography, Privacy-preserving techniques, and Federated learning (FL). 
           I am a member of IEEE, IEEE Computer Society and IEEE Blockchain Community. 
       </p>
     </div>
